@@ -33,7 +33,7 @@ object SearchApplication extends Controller {
       }
       val statusSearchResultsResponse = getStatusSearchResponse(q)
       val statusSearchResultsMap = extractResultsToMap[StatusSearchResultsResponse](statusSearchResultsResponse)
-      Text(JSONSerializer.serialize(statusSearchResultsMap))
+      Json(JSONSerializer.serialize(statusSearchResultsMap))
     }
     catch {
       case EmptyQueryStringException(message) => NotFound(message) //Play does not allow a message for BadRequest (400), which is a more applicable error code than NotFound(404). Showing the message is more important.
