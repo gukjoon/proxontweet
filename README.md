@@ -46,5 +46,5 @@ From your proxontweet directory:
 ## Design choices ##
 1. Optimized for readability as opposed to speed.
 2. Commenting assumes the reader is literate in Scala and the Play Framework.
-3. Will not search for users as it requires OAuth. Since the consumer of this data is presumably another program, the requirement of using a browser to do OAuth does not fit with the requirements.
+3. Will not search for users as the API call requires OAuth. The consumer of this data will be another program and OAuth is browser-based.
 4. Used 404 error instead of 400 for empty query string as Play does not allow a message with a 400 response.
