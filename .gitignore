@@ -1,0 +1,7 @@
+/test-result/*
+/modules/*
+/lib/*
+/project/*
+/tmp/*
+/app/target/*
+/target/*

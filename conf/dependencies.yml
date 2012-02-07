@@ -1,0 +1,20 @@
+# Application dependencies
+
+require:
+    - play
+    - play -> scala 0.9.1
+    - play -> oauth 1.0
+    - net.liftweb -> lift-json_2.8.1 2.4-M5:
+        exclude:
+            - org.scala-lang -> scala-compiler
+            - org.scala-lang -> scala-library
+            - org.scala-lang -> scalap
+
+repositories:
+    - ScalaTools:
+        type: iBiblio
+        root: "http://scala-tools.org/repo-releases/"
+        contains:
+            - net.databinder
+            - net.databinder.dispatch
+            - net.liftweb -> *

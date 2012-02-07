@@ -1,0 +1,13 @@
+*{ You can use plain selenium command using the selenium tag }*
+
+#{selenium}
+    // Open a basic search, and check that no error occured
+    open('/twitter-search/status?q=monster')
+    assertNotTitle('Application error')
+    assertTextPresent('query')
+#{/selenium}
+
+#{selenium}
+    open('/twitter-search/status?q=')
+    assertTextPresent('Not found')
+#{/selenium}
