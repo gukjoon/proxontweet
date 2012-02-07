@@ -9,6 +9,7 @@
 
 ### dependencies ##
 From your proxontweet directory:
+
     play install scala
     play install oauth
     play dependencies --sync
