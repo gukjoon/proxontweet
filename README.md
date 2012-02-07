@@ -1,9 +1,6 @@
 # A Prox On Tweet #
 
 ## Install ##
-### Get it ##
-    git clone https://gukjoon@github.com/gukjoon/proxontweet.git
-
 ### play framework ###
     wget http://download.playframework.org/releases/play-1.2.4.zip
     unzip play-1.2.4.zip
