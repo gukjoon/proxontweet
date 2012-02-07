@@ -17,9 +17,13 @@ From your proxontweet directory:
 ## Run/Deploy ##
 
 ### Testing ###
+
     play test
 
+You may then use the Play Framework's built in testing facilities at http://localhost:9000/@tests to run both the ScalaTests and Selenium tests. More on this [here](http://www.playframework.org/documentation/1.2.1/test#running)
+
 ### Dev Env ###
+
     play run
 
 ## API ##
