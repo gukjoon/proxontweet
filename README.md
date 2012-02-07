@@ -11,6 +11,7 @@
     export PATH=/Applications/play-1.2.4:$PATH
 
 ### dependencies ##
+From your proxontweet directory:
     play install scala
     play install oauth
     play dependencies --sync
@@ -25,17 +26,22 @@
 
 ## API ##
 /twitter-search/status?q=
-	returns status response
-
 ### Status Response ###
-	{ twitter_response_time : "",
+	{ completed_in : "",
 	  query : "",
-	  results : [StatusResult]}       
+	  results : []}
+
+* completed_in : Twitter response time
+* query : The requested query
+* results : A list of StatusResult objects
+	  
 
 ### StatusResult ###
 	{ from_user : "",
 	  text : ""}
 
+* from_user : User that sent the tweet
+* text : Text of the tweet
 
 ## Design choices ##
 1. Optimized for readability as opposed to speed.
